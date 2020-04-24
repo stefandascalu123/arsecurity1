@@ -1,5 +1,5 @@
 
-const token = require("./token.json");
+const token = process.env.token;
 const Discord = require('discord.js');
 
 const bot = new Discord.Client();
@@ -79,4 +79,4 @@ bot.on('message', async message=>{
 })
 
 
-bot.login(token.token_inf);
+bot.login(token);
